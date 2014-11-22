@@ -1,0 +1,28 @@
+<div class="gb-entry-box">
+    <div class="gb-head gb-padding">{TEXT_NEW_ENTRY}</div>
+    <div class="gb-padding">
+        <div class="gb-body">
+            {TEXT_NAME} {TEXT_MANDATORY_CHAR}<br />
+            <input type="text" name="{GB_INPUT}name" class="entry-input-error-name" value="" />
+            <span>{TEXT_MAIL}</span>
+            <input type="text" name="{GB_INPUT}mail" class="entry-input-error-validate-mail" value="" />
+            <span>{TEXT_WEB}</span>
+            <input type="text" name="{GB_INPUT}web" class="entry-input-error-validate-web" value="" />
+            <span>{SPAM_TASK}&nbsp;&nbsp;&nbsp;{TEXT_MANDATORY_CHAR}</span>
+            <input type="text" name="{GB_INPUT}spam" class="entry-input-error-spam" value="" />
+            <input type="text" name="{GB_INPUT}asta" class="entry-important" value="" />
+            <div class="gb-textarea-box">
+                {TEXT_ENTRY} {TEXT_MANDATORY_CHAR}<br />
+                <textarea cols="50" rows="10" name="{GB_INPUT}entry" class="entry-input-error-entry"></textarea>
+            </div>
+            <div class="gb-padding-box"><div class="gb-left">{TEXT_MANDATORY}</div>{SMILEYS}<br style="clear:both;"/></div>
+            <div class="gb-padding-box">
+                <input id="privacy{GB_INPUT}privacy" class="entry-input-error-privacy" type="checkbox" name="{GB_INPUT}privacy" value="privacy" /> <label for="privacy{GB_INPUT}privacy" class="entry-input-error-privacy">{TEXT_PRIVACY}</label>
+            </div>
+        </div>
+        <div class="gb-center gb-padding">
+            <input type="submit" name="submit" value="{TEXT_BUTTON_SEND}" /> 
+            <input type="reset" value="{TEXT_BUTTON_CANCEL}" />
+        </div>
+    </div>
+</div>

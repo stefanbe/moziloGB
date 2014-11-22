@@ -1,0 +1,38 @@
+<div class="com-entry-box com-new js-entry-new js-entry-hide">
+    {NEW_ERROR}{NEW_SUCCESS}
+    <div class="com-table">
+        <div class="com-table-row">
+            <div class="com-table-cell-left"><span class="com-input-title">{TEXT_NAME} {TEXT_MANDATORY_CHAR}</span></div>
+            <div class="com-table-cell"><span class="com-input-title">{TEXT_ENTRY} {TEXT_MANDATORY_CHAR}</span></div>
+        </div>
+        <div class="com-table-row">
+            <div class="com-table-cell-left">
+                <input type="text" name="{GB_INPUT}name" class="entry-input-error-name" value="" />
+                <span class="com-input-title">{TEXT_MAIL} <span class="com-text-small">{TEXT_MAIL_PUBLISHED}</span></span>
+                <input type="text" name="{GB_INPUT}mail" class="entry-input-error-validate-mail" value="" />
+                <span class="com-input-title">{TEXT_WEB}</span>
+                <input type="text" name="{GB_INPUT}web" class="entry-input-error-validate-web" value="" />
+                <span class="com-input-title">{SPAM_TASK}&nbsp;&nbsp;&nbsp;{TEXT_MANDATORY_CHAR}</span>
+                <input type="text" name="{GB_INPUT}spam" class="entry-input-error-spam" value="" />
+                <input type="text" name="{GB_INPUT}asta" class="entry-important" value="" />
+            </div>
+            <div class="com-table-cell com-cell-textarea">
+                <textarea cols="50" rows="10" name="{GB_INPUT}entry" class="entry-input-error-entry"></textarea>
+            </div>
+        </div>
+        <div class="com-table-row">
+            <div class="com-table-cell-left">{TEXT_MANDATORY}</div>
+            <div class="com-table-cell">{SMILEYS}</div>
+        </div>
+    </div>
+    <div class="com-padding">
+        <label for="privacy{GB_INPUT}privacy" class="entry-input-error-privacy"><input id="privacy{GB_INPUT}privacy" class="entry-input-error-privacy" type="checkbox" name="{GB_INPUT}privacy" value="privacy" /> {TEXT_PRIVACY}</label>
+    </div>
+    <div class="com-center">
+        <label for="in-radio-new" class="com-label-button entry-input-error-number">
+            <input id="in-radio-new" type="radio" name="{GB_INPUT}number" value="new" /> {TEXT_REPLY_TO_NEW}
+        </label>
+        <input type="submit" name="submit" value="{TEXT_BUTTON_SEND}" />
+        <input type="reset" value="{TEXT_BUTTON_CANCEL}" />
+    </div>
+</div>

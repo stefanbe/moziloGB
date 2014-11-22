@@ -1,0 +1,15 @@
+<!--entry_time_format= %e %B, %Y %R -->
+<div class="com-box js-page-change-scroll">
+    <div class="com-bottom js-entry-show" style="display:none;">
+        {TEXT_NO_OF_COMMENT} ({NO_OF_ENTRIES})
+        <span class="com-buttom js-entry-box-show js-entry-show" style="display:none;"> {TEXT_BUTTON_READ}</span>
+        <span class="com-buttom js-entry-box-hide" style="display:none;"> {TEXT_BUTTON_READ_HIDE}</span>
+    </div>
+    <div class="js-entry-box js-entry-hide">
+        {NO_RESPONSE}{MAINTENANCE_MODE}
+        {TMPL_NEW_ENTRY}
+        <p class="com-center com-relative"><span class="com-comments js-entry-hide">{TEXT_NO_OF_COMMENT} ({NO_OF_ENTRIES})</span>&nbsp;<span class="per_page_remove">{TEXT_PER_PAGE}{ENTRIES_PER_PAGE}</span>&nbsp;</p>
+        {TMPL_ENTRY}
+        <p class="per_page_remove com-center">{TEXT_PER_PAGE}{ENTRIES_PER_PAGE}</p>
+    </div>
+</div>

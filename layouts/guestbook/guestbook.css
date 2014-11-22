@@ -1,0 +1,141 @@
+.gb-box {
+    font-size:12px;
+}
+
+.gb-box textarea, .gb-box input {
+    font-size:12px;
+    font-family: inherit;
+}
+
+.gb-box textarea, .gb-box input[type=text] {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gb-box .gb-center {
+    position:relative;
+    text-align:center;
+}
+
+.gb-box p.gb-center  {
+    padding:0;
+    margin:1em 0;
+}
+
+.gb-box .gb-padding {
+    padding:2px 5px 2px 5px;
+}
+
+.gb-box .gb-entry-box {
+    border: 1px solid #A0A0A0;
+    /*font-size:12px; */
+}
+
+.gb-box .gb-head {
+    /*font-size:12px; */
+    font-weight:bold; 
+    background-color:#A0A0A0;
+    color:#FFFFFF;
+}
+
+.gb-box .gb-head span, .gb-box .gb-head a {
+    margin-right:.7em;
+}
+
+.gb-box span.gb-time {
+    margin-right:0;
+    margin-left:.5em;
+    font-weight:normal; 
+}
+
+.gb-box .gb-comment, .gb-box .gb-reply {
+    border-top: 1px solid #A0A0A0;
+}
+
+.gb-box .gb-comment span {
+    font-weight:bold;
+}
+
+.gb-box .gb-comment div {
+    padding-left:1.5em;
+}
+
+.gb-box .gb-body {
+    /*font-size:12px;*/
+    line-height:16px;
+    position:relative;
+}
+
+.gb-box .gb-body span {
+    display:block;
+    padding-top:6px;
+}
+
+.gb-box input[type=text] {
+    border: 1px solid #A0A0A0;
+    line-height:12px;
+    font-size:10px;
+    width:28%;
+    height:16px;
+    margin:0;
+    padding:2px 4px;
+}
+
+.gb-box input[type=submit], .gb-box input[type=reset] {
+    margin:0 .5em;
+    padding:0 .2em;
+}
+
+.gb-box textarea.entry-input-error, .gb-box input[type=text].entry-input-error {
+    border-color: #aa0000;
+}
+
+.gb-box textarea {
+    border: 1px solid #A0A0A0;
+    line-height:12px;
+    font-size:10px;
+    width:100%;
+    min-width:100%;
+    max-width:100%;
+    height:130px;
+    min-height:130px;
+    max-height:130px;
+    margin:0;
+    padding:2px 4px;
+}
+
+.gb-box .entry-input-error {
+    border:1px solid #aa0000;
+}
+
+.gb-box label.entry-input-error {
+    color:#aa0000;
+    border:none;
+}
+
+.gb-box .gb-textarea-box {
+    position:absolute;
+    top:0;
+    right:0;
+    width:70%;
+}
+
+/*1=oben, 2=rechts, 3=unten, 4=links*/
+.gb-box .gb-padding-box {
+    padding:5px 5px 2px 5px;
+}
+
+.gb-box .entry-smileybar {
+    float:right;
+    width:70%;
+}
+
+.gb-box .gb-comments {
+    position:absolute;
+    left:0;
+}
+
+.gb-box .gb-left {
+    float:left;
+}

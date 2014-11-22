@@ -1,0 +1,248 @@
+
+/* ############ Komentar Listen Ansicht */
+.com-box .entry-li, .com-box .com-entry-box {
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -khtml-border-radius: .4em;
+    border-radius: .4em;
+}
+
+/*1=oben, 2=rechts, 3=unten, 4=links*/
+.com-box .entry-li, .com-box .com-new {
+    /* der border wird wegen dem .entry-li margin-bottom gebraucht */
+    border: 1px solid transparent;
+    border-left-color: silver;
+    border-top-color: silver;
+}
+
+.com-box .com-new {
+    margin-top:1em;
+}
+
+.com-box .entry-li {
+    margin-bottom: .4em;
+}
+
+/*1=oben, 2=rechts, 3=unten, 4=links*/
+.com-box .com-entry-box {
+    padding: .4em .8em;
+    background-color:#fff;
+    -webkit-box-shadow: .2em .2em .4em rgba(0,0,0,0.2);
+    -moz-box-shadow: .2em .2em .4em rgba(0,0,0,0.2);
+    box-shadow: .2em .2em .4em rgba(0,0,0,0.2);
+}
+
+.com-box .com-entry-box .com-date {
+    font-size:.8em;
+}
+
+.com-box .com-entry-box .com-entry {
+    margin-top:.4em;
+}
+
+.com-box .com-comment {
+    margin-top:.4em;
+    padding-top:.2em;
+    border-top:1px solid silver;
+}
+
+.com-box .com-comment span {
+    font-weight:bold;
+}
+
+.com-box .com-comment div {
+    padding:0 0 0 1.5em;
+    margin:0;
+}
+/*1=oben, 2=rechts, 3=unten, 4=links*/
+
+.com-box input,
+.com-box label,
+.com-box textarea,
+.com-box .com-table-cell {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   vertical-align:middle;
+   font-family: inherit;
+   border: none;
+}
+
+.com-box label.com-label-button, .com-box input[type=submit], .com-box input[type=reset],
+.com-box input[type=text], .com-box textarea, .com-box .com-buttom {
+    font-size:1em;
+    display: inline-block;
+    padding: .2em .4em;
+    background-color: transparent;
+    border: 1px solid silver;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    -khtml-border-radius: .3em;
+    border-radius: .3em;
+}
+
+.com-box label.com-label-button, .com-box input[type=submit], .com-box input[type=reset], .com-box .com-buttom {
+    padding: 0 .4em;
+    line-height: 1.4;
+    height: 1.6em;
+    cursor:pointer;
+    margin:0 .4em;
+}
+
+.com-box label.com-label-button {
+    margin-left: 0;
+    /*margin-bottom: 1em;*/
+}
+
+.com-box .com-entry-box label.com-label-button {
+    margin:0 .4em;
+}
+
+.com-box label.com-label-button:hover, .com-box input[type=submit]:hover, .com-box input[type=reset]:hover, .com-box .com-buttom:hover {
+    background-color: silver;
+}
+
+.com-box input[type=radio], .com-box input[type=checkbox] {
+    /*firefox damit die größe änderbar ist*/
+    -moz-appearance: none;
+    line-height: 1;
+    margin: 0 0 .2em 0;
+    padding:0;
+}
+
+.com-box label.com-label-button input[type=radio], .com-box label input[type=checkbox] {
+    margin: -.6em 0 -.4em 0;
+}
+
+
+.com-box input[type=text] {
+    height:1.4em;
+    width:100%;
+    margin-bottom:.6em;
+}
+
+.com-box input[type=text], .com-box textarea {
+    width:100%;
+    margin-bottom:.6em;
+}
+
+.com-box textarea {
+    height:100%;
+    min-height:100%;
+    max-height:100%;
+}
+
+.com-box .com-cell-textarea {
+/* 3 * input[type=text] height + margin-bottom = 6em */
+/* 3 * .com-input-title height = 3.6em */
+/* 1 * input[type=text] height = 1.4em */
+/*  = 11em */
+    height:11em;
+}
+
+.com-box .com-input-title {
+    height: 1.2em;
+    display: inline-block;
+    padding-left: .2em;
+    white-space:nowrap;
+}
+
+.com-box .com-text-small {
+    font-size:.6em;
+}
+
+.com-box .com-relative {
+    position:relative;
+}
+
+.com-box .com-comments {
+    position:absolute;
+    left:0;
+}
+
+.com-box .com-new-bottom {
+    margin-top:.6em;
+}
+
+.com-box .com-table {
+    display:table;
+    width:100%;
+}
+
+.com-box .com-table-row {
+    display:table-row;
+}
+
+.com-box .com-table-cell, .com-box .com-table-cell-left {
+    display:table-cell;
+    width:70%;
+    vertical-align:top;
+    text-align:left;
+}
+
+
+.com-box .com-table-cell-left {
+    width:30%;
+    padding-right: 1em;
+}
+
+
+.com-box .com-padding {
+    padding-top:.6em;
+    padding-bottom:.8em;
+}
+
+.com-box .com-center {
+    text-align:center;
+}
+
+.com-box .com-bottom {
+    margin-bottom:1em;
+}
+
+.com-box p.com-center {
+    margin:1em 0;
+    padding:0;
+    text-align:center;
+}
+
+.com-box label.entry-input-error {
+    border-color:#aa0000;
+    color:#aa0000;
+}
+
+.com-box  textarea.entry-input-error, .com-box input[type=text].entry-input-error {
+    border-color:#aa0000;
+}
+
+/*1=oben, 2=rechts, 3=unten, 4=links*/
+.com-box .entry-new-error, .com-box .entry-db-message, .com-box .entry-is-maintenance, .com-box .entry-new-success, .com-box .entry-no-response {
+    display:block;
+    margin:0 0 .6em 0;
+    color:#aa0000;
+    border:1px solid #aa0000;
+    padding:.4em;
+    font-weight:bolder;
+    background-color:transparent;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -khtml-border-radius: .4em;
+    border-radius: .4em;
+}
+
+.com-box .entry-new-success {
+    margin:.6em 0 0 0;
+    border:1px solid #00aa00;
+    color:#00aa00;
+}
+
+.com-box .com-new .entry-new-success {
+    margin:0 0 .6em 0;
+}
+
+.com-box .js-new-class {
+    margin-top: .5em;
+    margin-left: 1em;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+<pre>
+-----------------------------------------------------------------
+
+Der Template Ordner
+
+    Der Ordner Name Darf keine Sonderzeichen Enthalten auser "-" und "_"
+
+    Diese Dateien müssen Enthalten sein:
+        template.html
+        entry.html
+        new_entry.html
+
+    Optional:
+        NAME_DES_ORDNERS.css = Die CSS Datei
+        mail.???             = Das Bild für {ENTRY_MAIL}
+        web.???              = Das Bild für {ENTRY_WEB}
+
+-----------------------------------------------------------------
+
+Platzhalter die überall Erlaubt sind:
+    {IMG_SRC}           = der URL Pfad ins Aktuelle Template
+    {NEW_ERROR}         = Fehler Meldung Neuer Eintrag ist Pflicht
+    {NEW_SUCCESS}       = Erfolgs Meldung Neuer Eintrag
+    {NO_RESPONSE}       = DB ist im nur Lesen modus
+    {MAINTENANCE_MODE}  = Meldung ist im Wartungsmodus
+
+-----------------------------------------------------------------
+
+template.html
+
+    Optionale Template Einstellungen stehen am Anfang der Datei:
+        &lt;!--entry_time_format= %e %B, %Y %R --&gt;
+            Das Datums Format siehe PHP strftime() wird von {ENTRY_TIME} Verwendet
+            Default = Siehe cms/sprachen/language_????.txt _dateformat_0
+        &lt;!--entry_number=last--&gt;
+            Das Trennzeichen zwischen den Zahlen oder "last" nur die letzte Ziffer wird von {ENTRY_NUMBER} Verwendet
+            Default = "-"
+
+    Dateien Platzhalter (sind Pflicht):
+        {TMPL_NEW_ENTRY} = inhalt aus der Datei new_entry.html
+        {TMPL_ENTRY}     = inhalt aus der Datei entry.html
+
+    Optionale Platzhalter:
+        {NO_OF_ENTRIES}     = Anzahl Aller Einträge
+        {ENTRIES_PER_PAGE}  = Das Seiten Menu (Anzahl Einträg pro Seite)
+
+    Classname wo das HTML Element Entfernt wird wenn es Lehr ist:
+        no_entry_remove    = Wenn die Datenbank keine Einträge hat
+        per_page_remove    = Wenn Einräge pro Seite &lt; 2 ist
+
+-----------------------------------------------------------------
+
+entry.html
+
+    Classname wo das HTML Element Entfernt wird wenn es Lehr ist:
+        comment_remove     = Komentar eines Eintrags
+        new_remove         = Das HTML Element für "Antworten auf" (Optional)
+
+    Platzhalter:
+        {ENTRY_NUMBER}     = Nummer des Eintrags
+        {ENTRY_TIME}       = Erstelungs Datum
+        {ENTRY_NAME}       = Name
+        {ENTRY_WEB}        = Webadresse als Icon
+        {ENTRY_MAIL}       = Mailadresse als Icon
+        {ENTRY_WEB_NAME}   = Link aus {ENTRY_WEB} und {ENTRY_NAME}
+        {ENTRY_RESPONSE}   = Eintrag
+        {ENTRY_COMMENT}    = Komentar
+
+    Antworten = &lt;input id="in-radio-new" type="text" name="{GB_INPUT}number" value="" /&gt;
+                &lt;label for="in-radio-new"&gt; {TEXT_REPLY_TO_NEW}&lt;/label&gt;
+                Die werden Automatisch Entfernt wenn sie nicht gebraucht werden.
+                Braucht den Classnamen "entry-input-error-number" nicht um ein Pflichtfeld zu sein.
+
+-----------------------------------------------------------------
+
+new_entry.html
+
+    Formelemente die Vorhanden sein müssen:
+        Name          = &lt;input type="text" name="{GB_INPUT}name" value="" /&gt;
+        Eintrag       = &lt;textarea name="{GB_INPUT}entry"&gt;&lt;/textarea&gt;
+        Senden        = &lt;input type="submit" name="submit" value="{TEXT_BUTTON_SEND}" /&gt;
+                        Achtung hier ist der "name" ohne das "{GB_INPUT}"
+        Asta          = &lt;input type="text" name="{GB_INPUT}asta" value="" class="entry-important" /&gt;
+                       Dieses Formelemente solte nicht Sichtbar sein dafur gibts die Class "entry-important"
+
+    Optinale Formelemente die über den Classnamen gesteuert werden:
+        Mailadresse   = &lt;input type="text" name="{GB_INPUT}mail" value="" /&gt;
+        Webadresse    = &lt;input type="text" name="{GB_INPUT}web" value="" /&gt;
+        Auf Validate Prüfen:
+            entry-input-error-validate-mail, entry-input-error-validate-web
+        Pflichtfeld:
+            entry-input-error-mail, entry-input-error-web
+
+    Optinale Pflicht Formelemente die keinen Classnamen brauchen:
+        Neuer Eintrag = &lt;input id="in-radio-new" type="text" name="{GB_INPUT}number" value="new" /&gt;
+        Spam Antwort  = &lt;input type="text" name="{GB_INPUT}spam" value="" /&gt;
+        Datenschutz   = &lt;input type="checkbox" name="{GB_INPUT}privacy" value="privacy" /&gt;
+                        Achtung wenn Label verwendet wird dann für for="???{GB_INPUT}privacy"
+                        und id="???{GB_INPUT}privacy" verwenden
+
+    Optinale Formelemente:
+        Löschen       = &lt;input type="reset" value="{TEXT_BUTTON_CANCEL}" /&gt;
+
+    Classname wo das HTML Element Entfernt wird wenn es Lehr ist:
+        new_remove    = Das HTML Element für "Neuer Eintrag" (Optional)
+
+    Generierte Formelemente:
+        {SPAM_TASK}   = Spam Aufgabe
+        {SMILEYS}     = Optional die Smileys
+
+    Classnamen die überall für die Fehler Ausgabe Verwendent werden können:
+        "entry-input-error-NAME_VOM_INPUT" bei einem Fehler wird daraus "entry-input-error".
+        Beispiel:
+            &lt;input class="entry-input-error-name" type="text" name="{GB_INPUT}name" value="" /&gt;
+
+-----------------------------------------------------------------
+
+Platzhalter die aus dem sprachen Ordner der jeweiligen Sprache Benutzt werden können
+    Alle Einträge die mit "text_" anfangen
+    Beispiel:
+        der Eintrag "text_name" = der Platzhalter {TEXT_NAME}
+
+    Es ist möglich Eigene einträge Hinzuzufügen.
+    Sie müssen nur mit "text_" beginnen.
+
+-----------------------------------------------------------------
+
+Diese Class Namen werden vom Plugin Erstellt:
+    entry-form              = der Form Tag
+
+    entry-ul                = ul der Einträge
+    entry-first-ul          = die erste ul der Einträge
+
+    entry-li                = li der Einträge
+    entry-icons             = für den web und mail link
+    entry-icons-mail        = für den mail link
+    entry-icons-web         = für den web link
+    entry-name-web          = für den namen mit web link
+    entry-page-link         = Seiten Links auch der Aktive
+    entry-page-link-activ   = der Aktive Seiten Link
+
+    entry-new-success       = {NEW_SUCCESS}
+    entry-new-error         = {NEW_ERROR}
+    entry-db-message        = Fehler Datenbank
+    entry-no-response       = {NO_RESPONSE}
+    entry-is-maintenance    = {MAINTENANCE_MODE}
+    entry-input-error-???   = Error Class für Fehler bei einem Fehler wird das "-???" entfernt
+
+    entry-smileybar         = Smiley-Leiste
+    entry-smiley            = für die Smiley Icons
+
+-----------------------------------------------------------------
+
+Javascript
+
+    Classnamen:
+        js-page-change-scroll = wird die Seite gewächselt Scroll hier hin
+
+        js-entry-show         = Elemente die mit javascript Angezeigt werden
+        js-entry-hide         = Elemente die mit javascript Versteck werden
+
+        js-entry-box          = Eine Box die Buttoms hat zum Anzeigen/Versteck ist nur 1mal erlaubt
+        js-entry-box-show     = Der Buttom zum Anzeigen
+        js-entry-box-hide     = Der Buttom zum Verstäcken
+
+        js-entry-new          = Die Box mit dem Elemenet "Neuer Eintrag"
+        js-entry-add-new      = Nach diesen Elemenet wird "js-entry-new" Angehängt ist für "Antworten"
+                                oder die Erfolgs Meldung.
+        js-new-class          = Die Class wird an "js-entry-new" Angehängt wenn es eine "Antworten" ist
+
+    Variabeln die generiert werden:
+        Wenn Javascript Verwendet wird
+            use_js[DATENBANKNAME] = true
+
+        Bei einem Fehler oder Erfolg
+            scroll_to = js-scroll_DATENBANKNAME_ENTRYNR
+            Die Eintrags Listen erhalten die ID
+                js-scroll_DATENBANKNAME_ENTRYNR
+
+        Bei einem Seitenwechsel
+            change_page = DATENBANKNAME
+
+    Achtung:
+        Es muss mindestens 1 mal "js-entry-show" Verwendet werden damit Javascript geladen wird.
+        Das Label von "Neuer Eintrag" muss das Input Enthalten.
+
+-----------------------------------------------------------------
+</pre>
+    </body>
+</html>
+
+

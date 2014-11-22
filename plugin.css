@@ -1,0 +1,256 @@
+
+/* ############################################
+    Diese Klassen werden vom Plugin Erzeugt
+   ############################################ */
+
+/* der Form Tag */
+.entry-form {
+}
+
+/* Spamschutz das input Feld was nicht ausgefühlt werden darf */
+.entry-important {
+    display:none !important;
+}
+
+/* ul der Einträge */
+.entry-ul {
+    list-style:none;
+    padding-left:1em;
+}
+
+/* die erste ul der Einträge */
+.entry-first-ul {
+    padding-left:0;
+}
+
+/* li der Einträge */
+.entry-li {
+    position:relative;
+    margin-top:1em;
+}
+
+/* für den web und mail link */
+.entry-icons {
+}
+
+/* für den mail link */
+.entry-icons-mail {
+}
+
+/* für den web link */
+.entry-icons-web {
+}
+
+/* für den namen mit web link */
+.entry-name-web {
+}
+
+/* für das label vom Antworten Radio button */
+.entry-lable-to-entry {
+    padding-right:.5em;
+}
+
+/* für den Antworten Radio button */
+.entry-to-entry {
+    margin-bottom:0;
+}
+
+/* Smiley-Leiste */
+.entry-smileybar {
+    text-align:center;
+    position:relative;
+}
+
+.entry-smiley {
+    border:none;
+    padding: 1px;
+    margin:1px 2px 1px 1px;
+    vertical-align: middle;
+}
+
+/* Seiten Links auch der Aktive */
+.entry-page-link {
+    margin-left:.3em;
+}
+
+/* der Aktive Seiten Link */
+.entry-page-link-activ {
+    font-weight:bold;
+}
+
+.entry-new-success, .entry-new-error, .entry-db-message, .entry-is-maintenance {
+    display:block;
+    margin:.8em;
+    padding:.6em;
+    font-weight:bold;
+    border-style:solid;
+    border-width:1px;
+    border-color:transparent;
+}
+
+/* Erfogs meldung */
+.entry-new-success {
+    color:#00aa00;
+    border-color:#00aa00;
+    background-color:#DDFFDD;
+}
+
+.entry-new-error, .entry-db-message, .entry-is-maintenance {
+    color:#aa0000;
+    border-color:#aa0000;
+    background-color:#FFDDDD;
+}
+
+.entry-no-response {
+    color:#aa0000;
+    font-weight:bold;
+}
+
+.entry-input-error {
+    border:1px solid #f00;
+}
+
+
+
+/* ############################################
+    CSS für den Admin
+   ############################################ */
+
+#entry-admin-kopf {
+    margin-right:1em;
+}
+
+#entry-admin-kopf p {
+    position:relative;
+    margin-top:1em;
+    margin-bottom:0;
+}
+
+#entry-admin-kopf p.entry-admin-kopf-first-p {
+    margin-top:0;
+}
+
+#entry-admin-content {
+    margin-right:1em;
+    padding-left:0;
+    padding-right:0;
+}
+
+/* das input Komentar feld im admin */
+.entry-admin-comment {
+    width:98%;
+    height:1em;
+}
+
+/* das checkbox Löschen im admin */
+.entry-admin-delete {
+    float:right;
+}
+/*
+.entry-admin-button {
+    margin-right:1em;
+}*/
+
+.entry-admin-margin-right {
+    margin-right:1em;
+}
+
+.entry-admin-margin-left {
+    margin-left:1em;
+}
+
+.entry-admin-checkbox {
+    margin-right:.2em;
+}
+
+.entry-admin-in-text {
+    width:6em;
+    /*margin-right:1em;
+    margin-left:1em;*/
+}
+
+.entry-admin-in-newdb {
+    width:10em;
+}
+
+.entry-admin-tabs {
+    font-weight:bold;
+}
+
+.entry-admin-tabs-maintenance {
+    color:#aa0000 !Important;
+}
+
+.entry-admin-button-maintenance-on {
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:0;
+    border:1px solid #aa0000;
+    padding:.2em;
+    background-color:#FFDDDD;
+}
+
+.entry-admin-button-maintenance-off {
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:0;
+    border:1px solid #00aa00;
+    padding:.2em;
+    background-color:#DDFFDD;
+}
+
+.entry-admin-border {
+    border: 1pt solid silver;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.entry-admin-box {
+    padding:.3em .5em;
+}
+
+.entry-admin-inbox {
+    margin-top:.5em;
+}
+
+.entry-admin-head {
+    font-weight:bold;
+}
+
+.entry-admin-head span {
+    padding-right:1em;
+}
+
+.entry-admin-mail span {
+    padding:0;
+    font-weight:normal;
+    color:#B6B6B6;
+}
+
+.entry-admin-mail a {
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.entry-admin-time {
+    font-weight:normal;
+}
+
+.entry-admin-smileybar-close {
+    display:inline-block;
+    margin-left:1em;
+    margin-bottom:5px;
+    vertical-align: middle;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.entry-admin-h {
+    margin-bottom:.3em;
+}

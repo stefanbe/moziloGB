@@ -1,0 +1,89 @@
+admin_maintenance_button_set = Wartungsmodus setzen
+admin_maintenance_button_rel = Wartungsmodus entfernen
+admin_maintenance_text       = Um diese Datenbank bearbeiten zu können, muss sie in den <u>Wartungsmodus</u> versetzt werden.<br />!!! <u>Achtung: nicht vergessen, diesen nach dem Bearbeiten wieder zu entfernen</u> !!!
+
+admin_newdb_text             = Neue Datenbank
+admin_newdb_button           = Anlegen
+admin_newdb_error            = Die Datenbank ({PARAM1}) exisitert bereits.
+
+admin_entries_button_move    = Verschieben
+admin_entries_text_move_from = Eintrag (Pos.)
+admin_entries_text_move_to   = unter den Eintrag (Pos.)
+admin_entries_move_error     = Der Eintrag konnte nicht verschoben werden.<br />Entweder gab es ihn ({PARAM1}) nicht oder das Ziel ({PARAM2}) war unbekannt.
+admin_entries_del_error      = Diese Einträge konten nicht gelöscht werden.
+admin_entries_button_del     = Markierte Einträge löschen
+admin_entries_no_of          = Einträge
+
+admin_comment_save_error     = Beim Speichern ist bei diesen Einträgen ein Fehler aufgetreten.
+admin_comments_button_save   = Kommentare speichern
+
+admin_import_text1           = Diese Datei
+admin_import_text2           = mit diesen Datenbank Namen
+admin_import_button          = Importieren
+admin_import_error           = Das ist keine gültige moziloGB Datei oder sie konnte nicht eingelesen werden.
+admin_import_del_error       = Die zu importierende Datei ({PARAM1}) konnte nicht gelöscht werden.
+admin_import_save_error      = Die Datei ({PARAM1}) konnte nicht gespeichert werden.
+
+admin_db_save_error          = Die Datei ({PARAM1}) hat keine Schreibrechte.
+admin_db_delete_error        = Diese Datenbankdateien konnten nicht gelöscht werden.
+admin_db_button_delete       = Aktive Datenbank und Sicherungskopien löschen
+
+admin_js_del_backup_text     = und Backup Dateien:
+admin_js_del_entries_text    = Eintrags Nr.:
+
+admin_settings_text          = Einstellungen:
+admin_settings_sub           = Antworten auf Eintrag zulassen
+admin_settings_comment       = Kommentare für Eintrag zulassen
+admin_settings_no_response   = nur Lesen Modus
+admin_settings_button        = Ändern
+
+admin_backup_button          = Anlegen
+admin_backup_button_del      = Löschen
+admin_backup_button_use      = Wiederherstellen
+admin_backup_text1           = Sicherungskopie
+admin_backup_text2           = Ausgewählte
+
+newentryemail_db             = Datenbank:
+newentryemail_page           = Seite:
+newentryemail_name           = Name:
+newentryemail_entry          = Eintrag:
+newentryemail_subject        = Ein Neuer Eintrag von
+
+db_not_find               = Es ist noch keine Datenbank angelegt worden
+db_is_locket              = Die Datenbank ist vorübergehend gesperrt.
+db_no_template            = Es existiert kein Layout.
+db_is_maintenance         = Die Datenbank befindet sich im Wartungsmodus, deshalb ist im Moment kein Schreiben möglich.
+db_no_response            = Die Möglichkeit des Schreibens wurde abgeschaltet.
+
+msg_error                 = Es wurden nicht alle notwendigen Felder ausgefüllt.
+msg_maxlength             = Der Eintrag darf nicht länger als {PARAM1} Zeichen sein.
+msg_spam                  = Sie haben kürzlich bereits eine Nachricht hinterlassen.
+msg_success               = Vielen Dank - Ihr Eintrag wurde gespeichert!
+msg_save_error            = Der Eintrag konnte nicht gespeichert werden.
+msg_wrong_calcresult      = Die Antwort auf die Spamschutz-Frage war falsch.
+msg_no_replay             = Bitte auswählen, ob dies eine Antwort oder ein neuer Eintrag werden soll.
+msg_privacy               = Sie müssen der Datenschutzerklärung zustimmen.
+msg_mail                  = Das ist keine gültige Email Adresse.
+msg_web                   = Das ist keine gültige Web Adresse.
+
+text_button_cancel        = Löschen
+text_button_send          = Absenden
+text_button_read          = lesen
+text_button_read_hide     = zuklappen
+text_comment              = Kommentar:
+text_web                  = Homepage
+text_mail                 = E-Mail
+text_mail_published       = (wird nicht veröffentlicht)
+text_mandatory            = * Pflichtfelder
+text_mandatory_char       = *
+text_name                 = Name
+text_new_entry            = Neuer Eintrag
+text_no_of_entries        = Anzahl Einträge:
+text_no_of_comment        = Kommentare
+text_per_page             = Seite:
+text_entry                = Eintrag
+text_number               = #
+text_reply_to_entry       = Antworten
+text_reply_to_new         = Neuer Eintrag
+text_privacy              = Ich stimme den Datenschutzbestimmungen zu.
+

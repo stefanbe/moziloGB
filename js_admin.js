@@ -45,7 +45,7 @@ $(function() {
             tmp += "<br /><br />"+admin_js_del_backup_text+"<ul style=\"list-style:none;margin-top:0;padding-left:1em;\">";
             $('select[name="backupfile"] option').each(function() {
                 if($(this).val() != "false")
-                    tmp += "<li><b>"+$(this).val()+"</b></li>"
+                    tmp += "<li><b>"+$(this).val()+"</b></li>";
             });
             tmp += "</ul>";
         }
@@ -69,7 +69,7 @@ $(function() {
                     for(var i = 0; i < pos.length; i++)
                         pos[i]++;
                     pos = pos.join("-");
-                    tmp += "<li><b>"+pos+"</b></li>"
+                    tmp += "<li><b>"+pos+"</b></li>";
                 }
             });
             tmp += "</ul>";
@@ -85,7 +85,7 @@ $(function() {
         $('.entry-admin-smileybar-close').click(function(event) {
             event.preventDefault();
             $('.entry-smileybar').hide(100);
-            $('.entry-admin-comment').height('1em')
+            $('.entry-admin-comment').height('1em');
             admin_input_smiley = false;
         });
 
@@ -94,10 +94,10 @@ $(function() {
             var that = $(this);
             if(admin_input_smiley == that.attr('name'))
                 return false;
-            $('.entry-admin-comment').height('1em')
+            $('.entry-admin-comment').height('1em');
             admin_input_smiley = that.attr('name');
             smiley_box.hide(100, function() {
-                that.height('5em')
+                that.height('5em');
                 that.after(smiley_box.show(300));
             });
         });

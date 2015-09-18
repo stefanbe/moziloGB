@@ -466,7 +466,7 @@ class moziloGB extends Plugin {
 
         $info = array(
             // Plugin-Name
-            $this->adminLang->getLanguageValue("info_name","18"),
+            $this->adminLang->getLanguageValue("info_name","19"),
             // Plugin-Version
             "2.0",
             // Kurzbeschreibung

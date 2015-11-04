@@ -102,7 +102,10 @@ class moziloGBAdmin extends ShowEntries {
                 $db = '&db='.$this->curent_db;
             $url = $_SERVER['HTTP_HOST'].str_replace("&amp;","&",PLUGINADMIN_GET_URL).$db;
             # damit beim browserreload nicht wieder die daten gesendet werden senden wir eine get anfrage
-            header("Location: http://$url");
+            if(defined("HTTP"))
+                header("Location: ".HTTP.$url);
+            else
+                header("Location: http://$url");
             exit;
         }
         # es gab nee miteilung jetzt ausgeben da keine post anfrage

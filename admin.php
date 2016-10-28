@@ -37,7 +37,7 @@ class moziloGBAdmin extends ShowEntries {
     private $is_post = false;
     private $gbmessages = "";
 
-    function moziloGBAdmin($settings,$gblanguage) {
+    function __construct($settings,$gblanguage) {
 
         $this->makeParas();
 
@@ -47,7 +47,7 @@ class moziloGBAdmin extends ShowEntries {
         if(false !== ($tmp = getRequestValue("db","get")))
             $this->curent_db = $tmp;
 
-        $this->ShowEntries($this->curent_db,"",$settings,$gblanguage);
+        parent::__construct($this->curent_db,"",$settings,$gblanguage);
 
         # die gehen ohne maintenance mode
         if(false !== getRequestValue('curent_db',"post")) {

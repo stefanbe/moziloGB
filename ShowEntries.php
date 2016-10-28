@@ -25,7 +25,7 @@ class ShowEntries extends DatabaseGB {
     public $badwords;
 
     // initialize settings variable
-    function ShowEntries($dbname,$tmpl,$gbsettings,$gblanguage) {
+    function __construct($dbname,$tmpl,$gbsettings,$gblanguage) {
         $this->dbname = $dbname;
 
 
